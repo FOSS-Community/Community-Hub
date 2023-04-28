@@ -6,7 +6,7 @@ module.exports = {
     algolia_admin_key: process.env.ALGOLIA_SEARCH_ADMIN_KEY,
     algolia_app_id: process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
     algolia_search_api_key: process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY,
-    algolia_index: "dev_corndocs",
+    algolia_index: "dev_fosscu",
   },
   project: {
     name: "FOSSCU",
