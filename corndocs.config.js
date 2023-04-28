@@ -9,16 +9,16 @@ module.exports = {
     algolia_index: "dev_corndocs",
   },
   project: {
-    name: "CornDocs",
-    url: "https://www.corndocs.com",
+    name: "FOSSCU",
+    url: "https://docs.fosscu.org",
     github: {
-      repo: "https://github.com/dishwasher-detergent/CornDocs",
+      repo: "https://github.com/foss-community/community-hub/",
       usesMain: false,
     },
     logo: {
       src: "/static/logo.svg",
-      alt: "CornDocs Logo",
-      size: [80, 40],
+      alt: "FOSSCU Logo",
+      size: [30, 30],
     },
     mainScreen: {
       showSearch: true,
@@ -27,9 +27,9 @@ module.exports = {
         custom: {
           path: "index",
         },
-        title: "Build documentation that will impress your friends and family.",
+        title: "FOSSCU Community Hub",
         tagLine:
-          "CornDocs lets you easily create documentation to show off your projects!",
+          "Collaborate, Learn, Build Together",
       },
     },
   },
