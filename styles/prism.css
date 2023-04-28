@@ -116,7 +116,7 @@ code[class*="language-css"] {
 }
 
 .token.important {
-  color: #e90;
+  color: rgb(0, 238, 28);
 }
 
 .token.important,
@@ -197,7 +197,7 @@ code[class*="language-css"] {
 }
 
 .dark :not(pre) > code[class*="language-"] {
-  color: #db4c69;
+  color: #22f307;
   background: #1e293b;
 }
 /*********************************************************
@@ -240,7 +240,7 @@ code[class*="language-css"] {
 .dark .token.char,
 .dark .token.builtin,
 .dark .token.deleted {
-  color: #ce9178;
+  color: #35f505;
 }
 
 .language-css .token.string.url {
@@ -257,7 +257,7 @@ code[class*="language-css"] {
 }
 
 .dark .token.atrule {
-  color: #ce9178;
+  color: #84ce78;
 }
 
 .dark .token.atrule .token.rule {
@@ -339,11 +339,11 @@ code[class*="language-css"] {
 }
 
 .dark .token.selector {
-  color: #d7ba7d;
+  color: #7dd781;
 }
 
 .dark .token.escape {
-  color: #d7ba7d;
+  color: #7dd780;
 }
 
 .dark .token.tag {
