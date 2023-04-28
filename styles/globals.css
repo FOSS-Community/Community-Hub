@@ -1,0 +1,75 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+*::-webkit-scrollbar {
+  @apply h-1.5 w-1.5;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-slate-400 dark:bg-slate-600;
+}
+
+.griddy {
+  margin-top: -1px;
+  background-size: 40px 40px;
+  background-image: linear-gradient(
+      to right,
+      theme(backgroundColor.slate.300) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      theme(backgroundColor.slate.300) 1px,
+      transparent 1px
+    );
+}
+
+.dark .griddy {
+  background-size: 40px 40px;
+  background-image: linear-gradient(
+      to right,
+      theme(backgroundColor.slate.700) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      theme(backgroundColor.slate.700) 1px,
+      transparent 1px
+    );
+}
+
+.dotty {
+  background-size: 20px 20px;
+  background-image: radial-gradient(
+    circle,
+    theme(backgroundColor.slate.300) 1px,
+    transparent 1px
+  );
+}
+
+.dark .dotty {
+  background-size: 20px 20px;
+  background-image: radial-gradient(
+    circle,
+    theme(backgroundColor.slate.700) 1px,
+    transparent 1px
+  );
+}
+
+.radial {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    theme(backgroundColor.primary.500) 0%,
+    transparent 70%
+  );
+}
+
+.ais-Highlight-highlighted {
+  @apply not-italic text-primary-500;
+}

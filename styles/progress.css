@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Make clicks pass-through */
+#nprogress {
+  @apply pointer-events-none;
+}
+
+#nprogress .bar {
+  @apply fixed top-0 left-0 z-50 h-1 w-full bg-primary-500 dark:bg-primary-200;
+}
+
+.nprogress-custom-parent {
+  @apply relative overflow-hidden;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  @apply absolute;
+}
