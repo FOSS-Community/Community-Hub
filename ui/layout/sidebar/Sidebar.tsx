@@ -62,14 +62,7 @@ function Sidebar() {
         </nav>
         <div className="w-full flex-none text-center text-sm font-bold dark:text-white">
           <p>
-            Built with ❤️ and{" "}
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://github.com/dishwasher-detergent/CornDocs"
-            >
-              CornDocs
-            </a>
+            We 💚 Open Source
           </p>
         </div>
       </aside>
