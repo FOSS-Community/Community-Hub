@@ -21,3 +21,9 @@ This repository is licensed under the MIT License.
 
 ## 📧 Contact Us
 If you have any questions, suggestions, or concerns about FOSS Community United or this repository, please feel free to contact us via email or create an issue. We're always happy to hear from you!
+
+## 💪 Thanks to all Contributors
+
+Thanks a lot for spending your time helping FOSSC grow. Thanks a lot! Keep rocking 🍻
+
+[![Contributors](https://contrib.rocks/image?repo=FOSS-Community/community-hub)](https://github.com/FOSS-Community/community-hub)
