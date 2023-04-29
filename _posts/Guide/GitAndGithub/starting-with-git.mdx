@@ -1,0 +1,53 @@
+---
+title: "Starting with git"
+description: "getting started with git"
+tags: ["git"]
+date: 29 April 2023
+position: 1
+---
+
+Git is a version control system (VCS) that allows developers to manage the changes made to their code over time.
+VCSs are essential tools for software development, as they enable collaboration, versioning, and backup of code.
+
+Traditional version control systems like CVS or Subversion were centralized, meaning that there was a central repository where all the code was stored.
+Developers would check out a copy of the code from the repository, make changes, and then commit those changes back to the repository. While this approach worked well for small teams, it had limitations for larger projects or distributed teams, as it required constant network connectivity to access the central server. 
+Git, on the other hand, is a distributed version control system. This means that every developer has a full copy of the repository on their local machine. They can work on the code locally, make changes, and commit them without needing to connect to a central server. Once they're ready, they can push their changes to a remote repository where other team members can pull in the changes.
+
+Git was created by Linus Torvalds in 2005 as a tool to manage the Linux kernel development. It quickly became popular due to its speed, flexibility, and powerful branching model. Today, Git is one of the most widely used version control systems in the world, powering millions of software development projects ranging from small personal projects to large-scale enterprise applications.
+
+# Installing Git on your machine
+
+## MacOS
+Install [homebrew](https://brew.sh/) if you don't already have it, then:
+```bash
+brew install git
+```
+
+[Follow official guide for more details](https://git-scm.com/download/mac)
+
+## Linux
+### Debian
+- Open the Terminal and enter the command to update the package list
+```bash
+sudo apt update
+```
+- Enter the command to install Git
+```bash
+sudo apt install git
+```
+
+### Fedora
+Open the Terminal and enter the command
+```bash
+sudo dnf install Git
+```
+
+### Arch Linux
+Open the Terminal and enter the command
+```bash
+sudo pacman -Syu git
+```
+
+## Windows
+Sorry Guys, but intall Linux on your machine :)
+
