@@ -1,7 +1,64 @@
 ---
 title: "A guide to Github"
-description: "getting started with github"
+description: "getting started with github and creating new repository"
 tags: ["github"]
 date: 29 April 2023
-position: 3
+position: 2
 ---
+
+GitHub is a web-based platform for software developers to host, manage, and collaborate on their code.
+
+## Some terms used to contribute open source
+- Fork: A fork is a copy of a repository that you create on your own account. You can use a fork to make changes to the repository without affecting the original project.
+
+- Clone: Cloning creates a local copy of a Git repository on your machine.
+
+- Branch: A branch is a parallel version of a repository that allows you to make changes without affecting the main codebase. This is useful when working on new features or bug fixes.
+
+- Pull request: A pull request is a request to merge changes from one branch to another. When you make changes to a forked repository, you can submit a pull request to the original project owner to incorporate your changes.
+
+- Merge: Merging combines changes from one branch into another. When a pull request is accepted, the changes are merged into the main branch of the repository.
+
+- Commit: A commit is a record of changes to a repository. Each commit has a unique identifier and includes information about the changes made.
+
+- Issue: An issue is a problem, bug, or feature request that needs to be addressed in a repository. Issues can be opened by anyone and are tracked on the GitHub platform.
+
+- Repository: A repository is a collection of files and code that are stored together in Git. It contains all the project files, including the code, README file, and other documentation, as well as the history of changes made to the code.
+
+- Pull: Pulling retrieves the latest changes from a remote repository and updates your local repository with those changes.
+
+# Creating a repository
+## On GitHub
+- Log in to your GitHub account
+- Click on the "+" icon on the top-right side of the dashboard and select "New repository"
+![NewRepo](/images/newrepo.png)
+- Enter the repository name, description, and choose whether the repository should be public or private
+- Select "Initialize this repository with a README" if you want GitHub to automatically create a README file for you
+- Choose a license for your repository (optional)
+- Click on "Create repository"
+
+## Using Local Git
+- Open a terminal/command prompt and navigate to the directory where you want to create your repository.
+- Run the following command to initialize a new Git repository in the current directory:
+```git
+git init
+```
+- Create a new file in the repository directory and add some content to it.
+- Add the file to the staging area using the following command:
+```git
+git add .
+```
+- Commit the changes using the following command:
+```git
+git commit -m "Initial commit"
+```
+- If you have already created GitHub Repository,
+Link your local repository to the remote repository using the following command:
+```git
+git remote add origin <remote repository URL>
+```
+Replace `remote repository URL` with the URL of your remote repository.
+- Push the changes from your local repository to the remote repository using the following command:
+```git
+git push -u origin master
+```
