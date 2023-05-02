@@ -29,10 +29,10 @@ function PreviewArticle(props: PreviewProps) {
         />
       ) : (
         <div className="flex h-full w-full flex-col justify-center p-6">
-          <p className="whitespace-nowrap text-4xl font-black text-slate-400 dark:text-slate-500">
+          <p className="whitespace-nowrap text-2xl font-black text-slate-400 dark:text-slate-500">
             {title}
           </p>
-          <p className="whitespace-nowrap text-2xl font-bold text-slate-400 dark:text-slate-500">
+          <p className="whitespace-nowrap text-1xl font-bold text-slate-400 dark:text-slate-500">
             {description}
           </p>
         </div>
