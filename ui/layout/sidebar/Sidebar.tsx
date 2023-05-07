@@ -40,7 +40,7 @@ function Sidebar() {
         style={{ left: "max(0px,calc(50% - 45rem))" }}
         className={`fixed inset-0 top-16 right-auto z-20 flex w-full flex-col overflow-y-auto bg-white/90 px-8 pb-10 text-sm backdrop-blur-md dark:border-slate-800 dark:bg-slate-900/90 dark:text-white md:w-[19.5rem]`}
       >
-        <nav id="nav" className="relative flex-1 space-y-4 py-6 lg:leading-6">
+       <nav id="nav" className="relative flex-1 space-y-4 py-6 lg:leading-6 w-[17rem]">
           <SearchButton />
           <ul>
             {!isLoading ? (
