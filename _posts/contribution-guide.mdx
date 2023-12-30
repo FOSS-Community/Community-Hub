@@ -1,0 +1,171 @@
+---
+title: "Contributing to FOSSCU"
+description: "This guide for contributing to FOSSCU"
+tags: ["Contribution"]
+date: 31 December 2023
+position: 5
+---
+
+# CONTRIBUTION GUIDELINES
+
+We do all of our development [on GitHub](https://github.com/fOSS-Community/). If you are not familiar with GitHub or pull requests, [here is an excellent guide to get started](https://guides.github.com/activities/hello-world/).
+
+---
+
+## FINDING AN ISSUE
+
+Here's a list of [all our current projects](https://github.com/orgs/FOSS-Community/repositories). We use GitHub issues associated with each project to track the work associated with that project. That's where you can find things to work on.
+
+We make extensive use of issue labels to designate the priority, status, and beginner-friendliness of various issues. We have a standard set of labels across all projects, documented [here](/contributing-code/repo-labels/). Here are some of the ones that are most relevant to finding a good issue to work on:
+
+- **Issues available for community contribution:**
+
+  - The following tags mark issues that are open for community contribution:
+    - `help wanted`: Open to participation from the community but not necessarily beginner-friendly
+    - `good first issue`: Open to participation from the community and friendly towards new contributors
+  - You do not need our permission to work on one of these issues.
+  - You may work on an issue labeled `good first issue` even if it's not your first issue.
+
+- **Issues not available for community contribution:**
+
+  - The following tags mark issues that are _not_ open for community contribution:
+    - `🔒 member only`: Requires infrastructure access or institutional knowledge that would be impractical to provide to the community
+  - Do not work on these.
+
+- **Issues not ready for work:**
+
+  - The following tags mark issues that are _not_ open for community contribution:
+    - `🚧 status: blocked`: Blocked by other work that needs to be done first
+    - `🧹 status: ticket work required`: Needs additional work before it is ready to be taken up
+    - `🚦 status: awaiting triage`: Has not been triaged by a maintainer
+  - Do not work on these.
+
+- **Issues without any of the above labels:**
+  - These issues _may_ (or may not) be open for contribution.
+  - Please add a comment asking one of the maintainers to triage the issue and label it as appropriate.
+
+Check the issue comments/labels to see whether someone else has indicated that they are working on it. If someone is already working on it and there has been activity within the last 7 days, you may want to find a different issue to work on.
+
+### Contribution process
+
+Once you've found an issue you'd like to work on, please follow these steps to make your contribution:
+
+1. Comment on it and say you're working on that issue. This is to avoid conflicts with others also working on the issue. If you've followed the guidelines above, you don't need to ask permission to start work on an issue.
+2. Write your code and submit your pull request. Be sure to read and follow our [pull request guidelines](#pr-guidelines)!
+3. Wait for code review and address any issues raised as soon as you can.
+
+**A note on collaboration:** We encourage people to collaborate as much as possible. We especially appreciate contributors reviewing each other's pull requests, as long as you are [kind and constructive](https://medium.com/@otarutunde/comments-during-code-reviews-2cb7791e1ac7) when you do so.
+
+### Proposing a new issue
+
+If you want to work on something that there is no GitHub issue for, follow these steps:
+
+1. Create a new GitHub issue associated with the relevant repository and propose your change there. Be sure to include implementation details and the rationale for the proposed change.
+
+   - We are very reluctant to accept random pull requests without a related issue created first.
+
+2. The issue will automatically have the `🚦 status: awaiting triage` label applied. Wait for a project maintainer to evaluate your issue and decide whether it's something that we will accept a pull request for.
+
+3. Once the project maintainer has approved the issue and removed the `🚦 status: awaiting triage` label, you may start work on code as described in the "Contribution process" section above.
+
+When in doubt, ask a question on [one of our community forums](https://discord.com/invite/4xruwjjU9B).
+
+## DONATIONS
+
+Recurring donations to Free and Open Source Software Community can be made via [Sponsor @FOSS-Community on GitHub Sponsors](https://github.com/FOSS-Community).
+
+## PROJECT LIST
+
+This is a list of all active open source software projects that Creative Commons maintains.
+
+Please read the [Contributing Code](/contributing-code) page for general information on how to get involved. Contribution guidelines specific to an individual project can be found in the `README` and the `CONTRIBUTING` files in the root folder of every repository. If you have any questions, don't hesitate to reach out to us through [one of our community forums](https://discord.com/invite/4xruwjjU9B) or open a GitHub issue.
+
+## FEATURED PROJECTS
+
+### website-fossc
+
+- **GitHub Repository**: [FOSS-Community/website-fossc](https://github.com/FOSS-Community/website-fossc)
+- **Description**: This repository contains the assets required to build the FOSSC Website.
+- **Languages**: HTML, TailwindCSS, JavaScript, React
+- **Visit Site**: [Here](https://fosscu.org/)
+- **Community**: [Discord server (fosscu)](https://discord.com/invite/4xruwjjU9B)
+
+### fosscu-app
+
+- **GitHub Repository**: [FOSS-Community/fosscu-app](https://github.com/FOSS-Community/fosscu-app)
+- **Description**: A mobile app for fosscu community.
+- **Languages**: Dart, Flutter
+- **Visit Site**: [Here](https://play.google.com/store/apps/details?id=com.fosscu.app&pcampaignid=web_share)
+- **Community**: [Discord server (fosscu)](https://discord.com/invite/4xruwjjU9B)
+
+### Quickfire
+
+- **GitHub Repository**: [FOSS-Community/quickfire](https://github.com/FOSS-Community/quickfire)
+- **Description**: Quickfire is a powerful Dart CLI tool that supercharges your Flutter project setup.
+- **Languages**: Dart
+- **Visit Site**: [Here](https://quickfire.framer.website/)
+- **Community**: [Discord server (fosscu)](https://discord.com/invite/4xruwjjU9B)
+
+### paste.py 🐍
+
+- **GitHub Repository**: [FOSS-Community/paste.py](https://github.com/FOSS-Community/paste.py)
+- **Description**: paste.py 🐍 - A pastebin written in python.
+- **Languages**: Python, FastAPI, HTML
+- **Visit Site**: [paste.py 🐍](https://paste.fosscu.org/)
+- **Community**: [Discord server (fosscu)](https://discord.com/invite/4xruwjjU9B)
+
+## PR GUIDELINES
+
+We ask that contributors to FOSSCU projects submit a pull request with your changes. If you're not familiar with pull requests, please read [this GitHub documentation](https://help.github.com/en/articles/about-pull-requests). Here are our expectations for pull requests; following them will expedite the process of merging your code in.
+
+Read and follow the contributing guidelines and code of conduct for the project. Here are screenshots of where to find them for [first-time contributors](/contributing-code/pr-guidelines/first-time-contributor-resources.png) and [previous contributors](/contributing-code/pr-guidelines/previous-contributor-resources.png).
+
+We aim to review pull requests within five business days.\*. If it has been over five business days and you have not received any feedback, feel free to follow up with us.
+
+- **Make A Branch**
+
+  - Please create a separate branch for each issue that you're working on. Do not make changes to the default branch (e.g., `master`, `develop`) of your fork.
+
+- **Push Your Code ASAP**
+
+  - Push your code as soon as you can. Follow the "[early and often](https://www.worklytics.co/blog/commit-early-push-often/)" rule.
+  - Make a pull request as soon as you can and **mark the title with a "[WIP]"**. You can create a [draft pull request](https://help.github.com/en/articles/about-pull-requests#draft-pull-requests).
+    - [Screenshot: How to create a draft PR?](/contributing-code/pr-guidelines/draft_pr.gif)
+
+- **Describe Your Pull Request**
+
+  - Use the format specified in the pull request template for the repository. **Populate the stencil completely** for maximum verbosity.
+    - Tag the actual issue number by replacing `#[issue_number]` e.g. `#42`. This closes the issue when your PR is merged.
+    - Tag the actual issue author by replacing `@[author]` e.g. `@issue_author`. This brings the reporter of the issue into the conversation.
+    - Mark the tasks off your checklist by adding an `x` in the `[ ]` e.g. `[x]`. This checks off the boxes in your to-do list. The more boxes you check, the better.
+  - Describe your change in detail. Too much detail is better than too little.
+  - Describe how you tested your change.
+    - Check the Preview tab to make sure the Markdown is correctly rendered and that all tags and references are linked. If not, go back and edit the Markdown.
+    - [Screenshot: Populated pull request](/contributing-code/pr-guidelines/populated_pr.png)
+
+- **Request Review**
+
+  - Once your PR is ready, **remove the "[WIP]" from the title** and/or change it from a draft PR to a regular PR.
+  - If a specific reviewer is not assigned automatically, please [request a review](https://help.github.com/en/articles/requesting-a-pull-request-review) from the project maintainer and any other interested parties manually.
+
+- **Incorporating Feedback**
+  - If your PR gets a 'Changes requested' review, you will need to address the feedback and update your PR by pushing to the same branch. You don't need to close the PR and open a new one.
+  - Be sure to **re-request review** once you have made changes after a code review.
+    - [Screenshot: How to request re-review?](/contributing-code/pr-guidelines/rereview.png)
+  - Asking for a re-review makes it clear that you addressed the changes that were requested and that it's waiting on the maintainers instead of the other way round.
+    - [Screenshot: Difference between 'Changes requested' and 'Review required'](contributing-code/pr-guidelines/difference.png)
+
+## CODE GUIDELINES
+
+- Write comprehensive and robust tests that cover the changes you've made in your work.
+- Follow the appropriate code style standards for the language and framework you're using (e.g., PEP 8 for Python).
+- Write readable code – keep functions small and modular and name variables descriptively.
+- Document your code thoroughly.
+- Make sure all the existing tests pass.
+- User-facing code should support the following browsers:
+  - Chrome (Webkit-Blink / 22+)
+  - Firefox (Gecko / 28+)
+  - Edge (Chromium-based / 12+)
+  - Opera (Chromium-Blink / 12.1+)
+  - Safari (Apple’s Webkit / 7+)
+  - IE 11 (Trident)
