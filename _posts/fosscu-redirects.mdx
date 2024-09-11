@@ -1,0 +1,109 @@
+---
+title: "Url shortner Guide"
+description: "Guide for _redirects"
+tags: ["Infra"]
+date: 11 September 2024
+position: 8
+---
+# [_redirects](https://github.com/FOSS-Community/fosscu.org/blob/main/public/_redirects)   File Documentation
+
+## Overview
+
+The `_redirects` file is a plain text file used by various static site hosts (like Netlify) to configure URL redirects and rewrites. It allows you to control how your site responds to different URL requests without requiring server-side programming.
+
+## File Location
+
+Place the `_redirects` file in the root of your publish directory (often the same directory as your index.html) in our case it's in [public/_redirects](https://github.com/FOSS-Community/fosscu.org/blob/main/public/_redirects).
+
+## Basic Syntax
+
+Each redirect rule is placed on a new line with the following format:
+
+- `/from-path`: The path of the incoming request
+- `/to-path`: Where you want to send the request
+- `[status-code]`: Optional HTTP status code (default is 301)
+
+## Examples
+
+1. Simple Redirect:
+
+```
+/old-page    /new-page
+```
+
+2. Redirect with Status Code:
+
+```
+/deprecated-page    /current-page    301
+```
+
+3. Redirect to External Site:
+
+```
+/discord   https://discord.com
+/event     https://lu.ma
+```
+
+
+## Advanced Features
+
+### Splats
+
+Use `*` to match anything:
+
+```
+/blog/*    /news/:splat
+```
+
+This redirects `/blog/2023/post` to `/news/2023/post`.
+
+### Placeholders
+
+Use `:placeholder` for dynamic segments:
+
+```
+/users/:username    /profile/:username
+```
+
+### Query Parameters
+
+Preserve query parameters with `?`:
+
+```
+/search    /new-search    301!
+```
+
+The `!` forces query string preservation.
+
+### Proxying
+
+Proxy requests to another URL:
+
+```
+/api/*    https://api.example.com/:splat    200
+```
+
+### SPA Pushstate
+
+For single-page apps, use:
+
+```
+/*    /index.html    200
+```
+
+This serves your `index.html` for all routes, allowing client-side routing.
+
+## Order of Precedence
+
+Rules are processed from top to bottom. Place more specific rules before general ones.
+
+## Syntax Checking
+
+Many hosting platforms offer tools to check your `_redirects` file for errors before deploying.
+
+## Best Practices
+
+1. Keep it simple: Start with basic redirects and add complexity as needed.
+2. Use comments: Add `#` at the start of a line for comments.
+3. Test thoroughly: Verify all redirects work as expected before going live.
+4. Monitor: Keep an eye on 404 errors to identify needed redirects.
